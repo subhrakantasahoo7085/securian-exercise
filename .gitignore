@@ -1,0 +1,28 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+npm-debug.log*
+*.log
+
+# Build output
+dist/
+build/
+
+# Test artifacts
+allure-report/
+allure-results/
+screenshots/
+
+# Coverage reports
+coverage/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Temporary files
+*.swp

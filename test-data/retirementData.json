@@ -1,0 +1,41 @@
+{
+    "positive": {
+      "currentAge":40,
+      "retirementAge": 68,
+      "currentAnnualIncome": 1000000,
+      "spouseIncome": 75000,
+      "retirementSavings": 5000000,
+      "retirementContribution": 10,
+      "contributionIncrease": 25,
+      "socialSecurityIncome": "yes",
+      "relationshipStatus": "Married",
+      "ssOverride": 4000,
+      "additionalIncome": 5000,
+      "retirementDuration": 20,
+      "inflationAdjustment": "yes",
+      "inflationRate": 3,
+      "incomePercent": 75,
+      "preReturn": 8,
+      "postReturn": 5
+    },
+    "negative": {
+      "currentAge": 0,
+      "retirementAge": 58,
+      "currentAnnualIncome": 1000000,
+      "spouseIncome": 750000,
+      "retirementSavings": 5000000,
+      "retirementContribution": 15,
+      "contributionIncrease": 8,
+      "socialSecurityIncome": "yes",
+      "relationshipStatus": "Married",
+      "ssOverride": 40000,
+      "additionalIncome": 5000,
+      "retirementDuration": 3,
+      "inflationAdjustment": "yes",
+      "inflationRate": 3,
+      "incomePercent": 75,
+      "preReturn": 8,
+      "postReturn": 5
+    }
+  }
+  
