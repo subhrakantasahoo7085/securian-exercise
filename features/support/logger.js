@@ -1,4 +1,11 @@
 import { createLogger, format, transports } from 'winston';
+import fs from 'fs';
+import path from 'path';
+
+const logsDir = path.join(process.cwd(), 'logs');
+if (!fs.existsSync(logsDir)) {
+  fs.mkdirSync(logsDir);
+}
 
 const logger = createLogger({
   level: 'debug',
@@ -8,7 +15,7 @@ const logger = createLogger({
   ),
   transports: [
     new transports.Console(), // Log to console
-    new transports.File({ filename: 'logs/app.log' }) // Log to a file
+    new transports.File({ filename: path.join(logsDir, 'app.log') }) // Log to a file
   ]
 });
 

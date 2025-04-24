@@ -1,3 +1,8 @@
+import fs from 'fs';
+import path from 'path';
+import PDFDocument from 'pdfkit';
+import imageSize from 'image-size';
+import { exec } from 'child_process';
 import logger from './features/support/logger.js';
 
 logger.info('__dirname: ' + __dirname);
@@ -54,11 +59,15 @@ writeStream.on('finish', () => {
   }
 
   const openCommand = process.platform === 'win32' ? `start "" "${outputPdf}"` : process.platform === 'darwin' ? `open "${outputPdf}"` : `xdg-open "${outputPdf}"`;
-  exec(openCommand, err => {
+  exec(openCommand, (err) => {
     if (err) {
-      logger.error('Failed to open PDF: ' + err.message);
+      logger.error(`Failed to open PDF: ${err.message}`);
     } else {
       logger.info('PDF opened successfully.');
     }
   });
+});
+
+writeStream.on('error', (err) => {
+  logger.error(`Error writing PDF: ${err.message}`);
 });

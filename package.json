@@ -1,19 +1,20 @@
 {
-  "name": "securian_exercise",
+  "name": "securian-exercise",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
+  "scripts": {    
     "test": "npx wdio run wdio.conf.js",
-    "generate:pdf": "node generatePdfFromScreenshots.js",
+    "init": "npm run test && npm run generate:pdf",
     "allure:generate": "npx allure generate allure-results --clean -o allure-report",
     "allure:open": "npx allure open allure-report",
     "allure:serve": "npm run allure:generate && npm run allure:open",
+    "generate:pdf": "node generatePdfFromScreenshots.js",
     "start": "npm test",
     "test-and-generate-pdf": "npm run test && npm run generate:pdf"
   },
   "type": "module",
   "keywords": [],
-  "author": "",
+  "author": "Subhrakanta Sahoo",
   "license": "ISC",
   "description": "WebdriverIO project using Cucumber framework",
   "devDependencies": {
@@ -27,6 +28,7 @@
     "allure-commandline": "^2.33.0",
     "chromedriver": "^135.0.2",
     "cucumber": "^6.0.7",
+    "eslint": "^9.25.1",
     "image-size": "^2.0.2",
     "pdfkit": "^0.17.0",
     "wdio-chromedriver-service": "^8.1.1",

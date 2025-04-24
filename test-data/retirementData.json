@@ -1,41 +1,116 @@
 {
-    "positive": {
-      "currentAge":40,
-      "retirementAge": 68,
-      "currentAnnualIncome": 1000000,
-      "spouseIncome": 75000,
-      "retirementSavings": 5000000,
-      "retirementContribution": 10,
-      "contributionIncrease": 25,
+  "TC_01": {
+    "firstPage": {
+      "currentAge": "40",
+      "retirementAge": "68",
+      "currentAnnualIncome": "100000",
+      "spouseIncome": "75000",
+      "retirementSavings": "500000",
+      "retirementContribution": "10",
+      "contributionIncrease": ".25",
       "socialSecurityIncome": "yes",
       "relationshipStatus": "Married",
-      "ssOverride": 4000,
-      "additionalIncome": 5000,
-      "retirementDuration": 20,
+      "ssOverride": "4000",
+      "defaultValuesLink": "Yes",
+      "additionalIncome": "500",
+      "retirementDuration": "20",
       "inflationAdjustment": "yes",
-      "inflationRate": 3,
-      "incomePercent": 75,
-      "preReturn": 8,
-      "postReturn": 5
-    },
-    "negative": {
-      "currentAge": 0,
-      "retirementAge": 58,
-      "currentAnnualIncome": 1000000,
-      "spouseIncome": 750000,
-      "retirementSavings": 5000000,
-      "retirementContribution": 15,
-      "contributionIncrease": 8,
+      "inflationRate": "4",
+      "incomePercent": "80",
+      "preReturn": "8",
+      "postReturn": "5"
+    }
+  },
+  "TC_02": {
+    "firstPage": {
+      "currentAge": "40",
+      "retirementAge": "68",
+      "currentAnnualIncome": "100000",
+      "spouseIncome": "75000",
+      "retirementSavings": "500000",
+      "retirementContribution": "10",
+      "contributionIncrease": "1",
       "socialSecurityIncome": "yes",
       "relationshipStatus": "Married",
-      "ssOverride": 40000,
-      "additionalIncome": 5000,
-      "retirementDuration": 3,
-      "inflationAdjustment": "yes",
-      "inflationRate": 3,
-      "incomePercent": 75,
-      "preReturn": 8,
-      "postReturn": 5
+      "ssOverride": "4000",
+      "defaultValuesLink": "Yes",
+      "additionalIncome": "500",
+      "retirementDuration": "20",
+      "inflationAdjustment": "no",
+      "inflationRate": "4",
+      "incomePercent": "80",
+      "preReturn": "8",
+      "postReturn": "5"
+    }
+  },
+  "TC_03": {
+    "firstPage": {
+      "currentAge": "40",
+      "retirementAge": "68",
+      "currentAnnualIncome": "100000",
+      "spouseIncome": "75000",
+      "retirementSavings": "500000",
+      "retirementContribution": "10",
+      "contributionIncrease": "1",
+      "socialSecurityIncome": "no",
+      "defaultValuesLink": "Yes",
+      "additionalIncome": "500",
+      "retirementDuration": "20",
+      "inflationAdjustment": "no",
+      "inflationRate": "4",
+      "incomePercent": "80",
+      "preReturn": "8",
+      "postReturn": "5"
+    }
+  },
+  "TC_04": {
+    "firstPage": {
+      "currentAge": "40",
+      "retirementAge": "68",
+      "currentAnnualIncome": "100000",
+      "spouseIncome": "75000",
+      "retirementSavings": "500000",
+      "retirementContribution": "10",
+      "contributionIncrease": "1",
+      "socialSecurityIncome": "yes",
+      "relationshipStatus": "Married",
+      "ssOverride": "4000",
+      "defaultValuesLink": "No"
+    }
+  },
+  "TC_05": {
+    "firstPage": {
+      "currentAge": "40",
+      "retirementAge": "68",
+      "currentAnnualIncome": "100000",
+      "spouseIncome": "75000",
+      "retirementSavings": "500000",
+      "retirementContribution": "10",
+      "contributionIncrease": "1",
+      "socialSecurityIncome": "no",
+      "defaultValuesLink": "No"
+    }
+  },
+  "TC_06": {
+    "firstPage": {
+      "currentAge": " ",
+      "retirementAge": " ",
+      "currentAnnualIncome": " ",
+      "spouseIncome": " ",
+      "retirementSavings": " ",
+      "retirementContribution": "-5",
+      "contributionIncrease": "-1",
+      "socialSecurityIncome": "no",
+      "relationshipStatus": "Single",
+      "ssOverride": "-500",
+      "defaultValuesLink": "Yes",
+      "additionalIncome": "5000",
+      "retirementDuration": "10",
+      "inflationAdjustment": "no",
+      "inflationRate": "1",
+      "incomePercent": "50",
+      "preReturn": "2",
+      "postReturn": "1"
     }
   }
-  
+}
