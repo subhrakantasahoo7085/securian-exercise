@@ -1,17 +1,51 @@
-Feature: Pre-Retirement Calculator Saving
+Feature: Calculating retirement savings using securian pre-retirement calculator
 
-  Scenario Outline: Fill and submit pre-retirement calculator
-    Given I open the retirement calculator form
-    When I fill in the "<page>" page of the form with "<testCase>" data
-    And I click on the "Save Changes" and "Calculate" buttons
-    Then the result should be "<expectedResult>"
+    Background: PreRetirementCalc page
+        Given user navigates to the retirement calculator page
 
-    Examples:
-      | testCase  | page         | expectedResult     |
-      | TC_01     | firstPage    | Success            |
-      | TC_02     | firstPage    | Success            |
-      | TC_03     | firstPage    | Success            |
-      | TC_04     | firstPage    | Success            |
-      | TC_05     | firstPage    | Success            |
-      | TC_06     | firstPage    | Invalid input      |
-      
+    Scenario Outline: Fill details and calculate retirement savings - of - <testCaseName>
+        Given user fills the required details for <testCaseName>
+        When user clicks on Calculate button
+        Then user should see the retirement savings details
+        Examples:
+            | testCaseName                        |
+            | TC01_verifywithSocialSecurityNo     |
+            | TC02_verifyWithSocialSecurityYes    |
+            | TC03_verifyWtihMaritalStatusMarried |
+
+
+    Scenario Outline: Fill details and calculate retirement savings - of - <testCaseName>
+        Given user fills the required details for <testCaseName>
+        When user clicks on Calculate button
+        Then user should see the error messages for <testCaseName>
+        Examples:
+            | testCaseName                |
+            | TC04_noCurrentAge           |
+            | TC05_noRetirementAge        |
+            | TC06_noCurrentIncome        |
+            | TC07_noCurrentTotalSavings  |
+            | TC08_noCurrentAnnualSavings |
+            | TC09_noSavingsIncreaseRate  |
+            | TC10_currAgeGrtThanRetAge   |
+            | TC11_currentAgeMaxVal       |
+            | TC12_retirementAgeMaxVal    |
+
+    Scenario Outline: Validting Social Security Details - <testCaseName>
+        Given user fills the required details for <testCaseName>
+        Then user should see the Social Security details for <testCaseName>
+        Examples:
+            | testCaseName                        |
+            | TC13_verifywithSocialSecurityNo     |
+            | TC14_verifyWithSocialSecurityYes    |
+            | TC15_verifyWithMaritalStatusMarried |
+
+
+    Scenario Outline: Fill details, modify default values and calculate retirement savings - of - <testCaseName>
+        Given user fills the required details for <testCaseName>
+        And user modifies the default values <testCaseName>
+        When user clicks on Calculate button
+        Then user should see the retirement savings details
+        Examples:
+            | testCaseName              |
+            | TC16_withIncludeInflation |
+            | TC17_withExcludeInflation |

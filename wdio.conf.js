@@ -1,3 +1,4 @@
+
 import 'wdio-wait-for';
 import { execSync } from 'child_process';
 import path from 'path';
@@ -27,7 +28,7 @@ export const config = {
         acceptInsecureCerts: true // Accept insecure SSL certificates
     }],
 
-    logLevel: 'debug',
+    logLevel: 'info',
 
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
@@ -36,6 +37,7 @@ export const config = {
 
     cucumberOpts: {
         import: ['./features/step-definitions/preretirement.steps.js'],
+        //require: ['./features/step-definitions/*.js', './features/support/hooks.js'],
         backtrace: false,
         requireModule: [],
         dryRun: false,

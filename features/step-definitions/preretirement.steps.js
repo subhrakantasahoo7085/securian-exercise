@@ -1,38 +1,31 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
-import { openCalculator, fillPageData, clickButtons, validateResult } from '../../features/support/preRetirementHelper.js';
+import Calculate from '../../pageobjects/preRetirementCalcPage.js';
+import defaultValues from '../../pageobjects/defaultPage.js';
 
-Given('I open the retirement calculator form', async () => {
-    try {
-        await openCalculator();
-    } catch (error) {
-        console.error("Error in step: 'I open the retirement calculator form'", error.message);
-        throw error; // Re-throw the error to fail the step
-    }
+Given(/^user navigates to the retirement calculator page$/, async () => {
+    await Calculate.openCalculator();
 });
 
-When('I fill in the {string} page of the form with {string} data', async (page, testCase) => {
-    try {
-        await fillPageData(page, testCase);
-    } catch (error) {
-        console.error(`Error in step: 'I fill in the "${page}" page of the form with "${testCase}" data'`, error.message);
-        throw error;
-    }
+Given(/^user fills the required details for ([^"]*)$/, async function (testCaseName) {        
+    await Calculate.fillPageData(testCaseName);
 });
 
-When('I click on the "Save Changes" and "Calculate" buttons', async () => {
-    try {
-        await clickButtons();
-    } catch (error) {
-        console.error('Error in step: \'I click on the "Save Changes" and "Calculate" buttons\'', error.message);
-        throw error;
-    }
+Given(/^user modifies the default values ([^"]*)$/, async function (testCaseName) {
+    await defaultValues.defaultFillForm(testCaseName);
 });
 
-Then('the result should be {string}', async (expectedResult) => {
-    try {
-        await validateResult(expectedResult);
-    } catch (error) {
-        console.error(`Error in step: 'The result should be "${expectedResult}"'`, error.message);
-        throw error;
-    }
+When(/^user clicks on ([^"]*) button$/, async (button) => {
+await Calculate.clickButton(button);
+}); 
+
+Then(/^user should see the retirement savings details$/, async () => {
+    await Calculate.validateResultPageInfo();
+});
+
+Then(/^user should see the error messages for ([^"]*)$/, async (testCaseName) => {     
+    await Calculate.validateErrorDetailsInfo(testCaseName);
+});
+
+Then(/^user should see the Social Security details for ([^"]*)$/, async (testCaseName) => {
+    await Calculate.validateSocialSecurityDetails(testCaseName);
 });
