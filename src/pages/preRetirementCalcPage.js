@@ -1,11 +1,13 @@
 import logger from '../utils/logger.js';
 import utils from '../utils/commonUtility.js';
 import helperApp from '../utils/helperFunction.js';
+import config from '../../src/config/appConfig.js';
+
 
 class RetirementDetailsPage {
 
     get acceptCookiesBtn() {
-        return $("//button[contains(text(), 'Accept all cookies')]"); // Adjust selector as needed
+        return $("//button[contains(text(), 'Accept all cookies')]");
     }
     get currentAge() { return $("//input[@id='current-age']"); }
     get retirementAge() { return $("//input[@id='retirement-age']"); }
@@ -44,20 +46,7 @@ class RetirementDetailsPage {
     get invalidSavingIncRate() { return $('//*[@id="invalid-savings-increase-rate-error"]') };
 
 
-    async openCalculator() {
-        try {
-            await browser.reloadSession();
-            await browser.url(process.env.BASE_URL);
-            await this.currentAge.waitForDisplayed({ timeout: 5000 });
-            await browser.maximizeWindow();
-            await this.acceptCookiesIfPresent();
-            logger.info("Retirement calculator page opened successfully.");
-        } catch (error) {
-            logger.error("Error while opening the retirement calculator page:", error.message);
-            throw error;
-        }
-    }
-
+    // Checks if the "Accept Cookies" button is displayed and clicks it if so.
     async acceptCookiesIfPresent() {
         try {
             logger.info("Checking if the 'Accept Cookies' button is displayed...");
@@ -74,6 +63,28 @@ class RetirementDetailsPage {
             throw error;
         }
     }
+
+    /**
+ * Opens the securian retirement calculator page using the appropriate URL and path from config,
+ * maximizes the browser, and handles cookie prompt. */
+    async openCalculator() {
+        try {
+            await browser.reloadSession();
+            //await browser.url(config.BASE_URL);
+            await browser.url(`${config.baseUrl}${config.paths.login}`);
+            await this.currentAge.waitForDisplayed({ timeout: 5000 });
+            await browser.maximizeWindow();
+            await this.acceptCookiesIfPresent();
+            logger.info("Retirement calculator page opened successfully.");
+        } catch (error) {
+            logger.error("Error while opening the retirement calculator page:", error.message);
+            throw error;
+        }
+    }
+    /**
+  * Fills out the calculator form using test data loaded from a JSON file.
+  * Handles conditional logic based on the social security and marital status selections.
+  */
 
     async fillPageData(testCaseName) {
         try {
@@ -110,7 +121,10 @@ class RetirementDetailsPage {
 
 
 
-    /* Clicking the buttons */
+    /**
+ * Clicks a button on the page based on the button name provided.
+ * Supports "Calculate" and "Clear-Form" buttons.
+ */
     async clickButton(button) {
         try {
             switch (button) {
@@ -134,7 +148,8 @@ class RetirementDetailsPage {
         }
     }
 
-    /* Validate the result section */
+    /**
+ * Validates that the result section of the calculator is displayed and contains the expected elements.*/
     async validateResultPageInfo() {
         try {
             await this.resultPage.waitForDisplayed({ timeout: 10000 });
@@ -144,7 +159,6 @@ class RetirementDetailsPage {
                 logger.info('Result Section is not displayed');
                 throw new Error('Result Section is not displayed');
             } else {
-                //await browser.saveScreenshot(`./screenshots/screenshot-${Date.now()}.png`);
                 await utils.performElementAction(this.resultPage, 'isDisplayed', null, 'Result Page');
                 await utils.performElementAction(this.resultMessage, 'isDisplayed', null, 'Result Message');
                 await utils.performElementAction(this.resultChart, 'isDisplayed', null, 'Result Chart');
@@ -160,94 +174,42 @@ class RetirementDetailsPage {
         }
     }
 
-    /* Validate the error messages in negative testing*/
+    // Validates the error message displayed for each input field based on the test case name.
+
     async validateErrorDetailsInfo(testCaseName) {
         try {
-            const normalizedTestCaseName = testCaseName.replace(/^TC\d+_/, ''); // Remove prefix like 'TC01_'
-            switch (normalizedTestCaseName) {
-                case 'noCurrentAge':
-                    await this.verifyCurrentAgeError(testCaseName);
-                    break;
-                case 'noRetirementAge':
-                    await this.verifyRetirementAgeError(testCaseName);
-                    break;
-                case 'noCurrentIncome':
-                    await this.verifyCurrentIncomeError(testCaseName);
-                    break;
-                case 'noCurrentTotalSavings':
-                    await this.verifyCurrentTotalSavingsError(testCaseName);
-                    break;
-                case 'noCurrentAnnualSavings':
-                    await this.verifyCurrentAnnualSavingsError(testCaseName);
-                    break;
-                case 'noSavingsIncreaseRate':
-                    await this.verifySavingsIncreaseRateError(testCaseName);
-                    break;
-                case 'currAgeGrtThanRetAge':
-                    await this.verifyRetirementAgeError(testCaseName);
-                    break;
-                case 'currentAgeMaxVal':
-                    await this.verifyCurrentAgeError(testCaseName);
-                    break;
-                case 'retirementAgeMaxVal':
-                    await this.verifyRetirementAgeError(testCaseName);
-                    break;
-                case 'retirementAgeShouldNotBeLessThanCurrentAge':
-                    await this.verifyRetirementAgeError(testCaseName);
-                    break;
-                default:
-                    throw new Error('Invalid Test Case Name: ', testCaseName);
+            const normalizedName = testCaseName.replace(/^TC\d+_/, '');
+            const testData = await helperApp.readDataFromJson(testCaseName);
+
+            const errorSelectors = {
+                noCurrentAge: [this.invalidCurrentAge, 'Current Age'],
+                currentAgeMaxVal: [this.invalidCurrentAge, 'Current Age'],
+                noRetirementAge: [this.invalidRetirementAge, 'Retirement Age'],
+                retirementAgeMaxVal: [this.invalidRetirementAge, 'Retirement Age'],
+                retirementAgeShouldNotBeLessThanCurrentAge: [this.invalidRetirementAge, 'Retirement Age'],
+                noCurrentIncome: [this.invalidCurrentIncome, 'Current Income'],
+                noCurrentTotalSavings: [this.invalidCurrentTotalSaving, 'Current Total Savings'],
+                noCurrentAnnualSavings: [this.invalidCurrentAnnualSaving, 'Current Annual Savings'],
+                noSavingsIncreaseRate: [this.invalidSavingIncRate, 'Savings Increase Rate'],
+                currAgeGrtThanRetAge: [this.invalidRetirementAge, 'Retirement Age']
+            };
+
+            const selectorDetails = errorSelectors[normalizedName];
+
+            if (!selectorDetails) {
+                throw new Error(`Unrecognized test case name: ${testCaseName}`);
             }
+
+            const [fieldSelector, fieldName] = selectorDetails;
+            await helperApp.verifyErrorMessageText(fieldSelector, testData.errorMessage, fieldName);
         } catch (error) {
             logger.error("Error validating error messages:", error);
             throw error;
-
         }
     }
 
-    /* Verify the error messages for current age */
-    async verifyCurrentAgeError(testCaseName) {
 
-        const data = await helperApp.readDataFromJson(testCaseName);
-        await helperApp.verifyErrorMessageText(this.invalidCurrentAge, data.errorMessage, 'Current Age');
-    }
-
-    /* Verify the error messages for retirement age */
-    async verifyRetirementAgeError(testCaseName) {
-
-        const data = await helperApp.readDataFromJson(testCaseName);
-        await helperApp.verifyErrorMessageText(this.invalidRetirementAge, data.errorMessage, 'Retirement Age');
-    }
-
-    /* Verify the error messages for current income */
-    async verifyCurrentIncomeError(testCaseName) {
-
-        const data = await helperApp.readDataFromJson(testCaseName);
-        await helperApp.verifyErrorMessageText(this.invalidCurrentIncome, data.errorMessage, 'Current Income');
-    }
-
-    /* Verify the error messages for current total savings */
-    async verifyCurrentTotalSavingsError(testCaseName) {
-
-        const data = await helperApp.readDataFromJson(testCaseName);
-        await helperApp.verifyErrorMessageText(this.invalidCurrentTotalSaving, data.errorMessage, 'Current Total Savings');
-    }
-
-    /* Verify the error messages for current annual savings */
-    async verifyCurrentAnnualSavingsError(testCaseName) {
-
-        const data = await helperApp.readDataFromJson(testCaseName);
-        await helperApp.verifyErrorMessageText(this.invalidCurrentAnnualSaving, data.errorMessage, 'Current Annual Savings');
-    }
-
-    /* Verify the error messages for savings increase rate */
-    async verifySavingsIncreaseRateError(testCaseName) {
-
-        const data = await helperApp.readDataFromJson(testCaseName);
-        await helperApp.verifyErrorMessageText(this.invalidSavingIncRate, data.errorMessage, 'Savings Increase Rate');
-    }
-
-    /* Validate the social security details */
+    // Validates the Social Security benefit selections and override fields based on input data.
     async validateSocialSecurityDetails(testCaseName) {
         try {
 

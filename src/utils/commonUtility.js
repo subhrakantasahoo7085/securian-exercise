@@ -2,15 +2,19 @@ import logger from '../utils/logger.js';
 
 class UtilsClass {
     
-    async resolveElement(element) {
-        try {
-            return await element;
-        } catch (error) {
-            throw new Error('Failed to resolve the element.');
-        }
-    }
+    
 
-    // Function to perform actions on elements
+      /**
+     * Performs a specified action on a web element.
+     * Supported actions include: click, setValue, getText, isDisplayed, isClickable,
+     * getAttribute, clearValue, getCSSProperty
+     * 
+     * @param {Promise|WebdriverIO.Element} element - The target element.
+     * @param {string} action - The action to perform.
+     * @param {string|null} value - Optional value (used for setValue, getAttribute, etc.).
+     * @param {string|null} elementName - Optional name for logging.
+     * @returns {*} - Result of the performed action, if any.
+     */
     async performElementAction(element, action, value = null, elementName = null) {
         try {
             const targetElement = await this.resolveElement(element);
@@ -93,9 +97,12 @@ class UtilsClass {
         return cssProperty;
     }
 
-    async scrollElementIntoView(element, elementName) {
-        await element.scrollIntoView();
-        logger.info(`Scrolled element "${elementName}" into view.`);
+    async resolveElement(element) {
+        try {
+            return await element;
+        } catch (error) {
+            throw new Error('Failed to resolve the element.');
+        }
     }
 }
 

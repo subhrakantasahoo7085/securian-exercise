@@ -10,7 +10,13 @@ const __dirname = path.dirname(__filename);
 class HelperFunctions {
 
 
-    /* Read data from retirementData.json file */
+    /* 
+     * Reads data from the retirementData.json file.
+     * If a key is provided, fetches the value for that key from the JSON.
+     * If no key is provided, returns the entire JSON content.
+     * @param {string|null} key - The key to fetch specific data from the JSON. Default is null to fetch entire data.
+     * @returns {Object|string} - The entire JSON object or value of a specific key.
+     */
     readDataFromJson(key = null) {
         const filePath = path.resolve(__dirname, '../../resources/retirementData.json');
 
@@ -45,11 +51,12 @@ class HelperFunctions {
 
 
     /**
-     * Verifies if an error message matches the expected text.
-     * @param {WebdriverIO.Element} element - The element containing the error message.
-     * @param {string} expectedMessage - The expected error message.
-     * @param {string} elementName - The name of the element (for logging purposes).
-     */
+    * Verifies if the error message in the specified element matches the expected message.
+    * Logs the result of the validation.
+    * @param {WebdriverIO.Element} element - The element containing the error message.
+    * @param {string} expectedMessage - The expected error message to match.
+    * @param {string} elementName - The name of the element for logging purposes.
+    */
 
 
     async verifyErrorMessageText(element, expectedMessage, elementName) {
@@ -72,12 +79,13 @@ class HelperFunctions {
     }
 
 
-
     /**
- * Validates that each element in the list has the expected value.
- * Supports input, textarea, select, and other readable elements.
- * @param {Array} elementsWithValues - List of objects with element, expectedValue, and elementName
- */
+       * Extracts and cleans the value or text from an element.
+       * Handles input, textarea, select elements, and text elements.
+       * @param {WebdriverIO.Element} element - The WebdriverIO element to retrieve value from.
+       * @param {string} elementName - Name of the element for logging purposes.
+       * @returns {Promise<string|number>} - The cleaned value or text of the element.
+       */
     async expectElementsToHaveValues(elementsWithValues) {
         for (const { element, expectedValue, elementName } of elementsWithValues) {
             try {
@@ -86,79 +94,49 @@ class HelperFunctions {
                 }
 
                 await element.waitForExist({ timeout: 5000 });
-                const tagName = await element.getTagName();
-                let actualValue;
 
-                if (["input", "textarea", "select"].includes(tagName)) {
-                    actualValue = (await element.getValue()).replace(/[$,]/g, "").trim();
-
-                    // Convert to number if expectedValue is a number and actualValue is not empty
-                    if (!isNaN(expectedValue) && actualValue !== "") {
-                        actualValue = Number(actualValue);
-                    }
-                } else {
-                    actualValue = (await element.getText()).trim();
-                }
+                const actualValue = await this.assertElementValuesMatch(element, elementName);
 
                 await expect(actualValue).toEqual(expectedValue);
                 logger.info(`"${elementName}" has expected value: "${expectedValue}"`);
             } catch (error) {
-                logger.error(` Validation failed for "${elementName}": ${error.message}`);
+                logger.error(`Validation failed for "${elementName}": ${error.message}`);
                 throw error;
             }
         }
     }
 
-    /*
-  * Validates that each element in the list has the expected value.
-  * Supports input, textarea, select, and other readable elements.
-  * @param {Array} elementsWithValues - List of objects with { element, expectedValue, elementName }
-  */
-    // async expectElementsToHaveValues(elementsWithValues) {
-    //     for (const { element, expectedValue, elementName } of elementsWithValues) {
-    //         try {
-    //             if (!element) {
-    //                 throw new Error(`Element is undefined for "${elementName}".`);
-    //             }
+    /**
+      * Resolves the actual input element associated with a label or directly uses the element if it's already an input.
+      * @param {WebdriverIO.Element} element - The WebDriver element to resolve.
+      * @param {string} elementName - The name of the element for logging purposes.
+      * @returns {Promise<WebdriverIO.Element>} - The resolved input element.
+      */
+    async assertElementValuesMatch(element, elementName = "Unknown Element") {
+        const tagName = await element.getTagName();
+        let value;
 
-    //             await element.waitForExist({ timeout: 5000 });
+        if (["input", "textarea", "select"].includes(tagName)) {
+            // Optional: Wait until the value is populated
+            await browser.waitUntil(
+                async () => {
+                    const val = await element.getValue();
+                    return val && val.trim() !== "";
+                },
+                {
+                    timeout: 5000,
+                    timeoutMsg: `"${elementName}" did not receive a value within timeout.`,
+                }
+            );
 
-    //             const tagName = await element.getTagName();
-    //             let actualValue;
-
-    //             if (["input", "textarea", "select"].includes(tagName)) {
-    //                 // Wait for the field to contain a value
-    //                 await browser.waitUntil(
-    //                     async () => {
-    //                         const val = await element.getValue();
-    //                         return val && val.trim() !== "";
-    //                     },
-    //                     {
-    //                         timeout: 5000,
-    //                         timeoutMsg: `"${elementName}" did not receive a value within timeout.`,
-    //                     }
-    //                 );
-
-    //                 actualValue = (await element.getValue()).replace(/[$,]/g, "").trim();
-
-    //                 if (!isNaN(expectedValue) && actualValue !== "") {
-    //                     actualValue = Number(actualValue);
-    //                 }
-    //             } else {
-    //                 // For non-input elements, get visible text
-    //                 actualValue = (await element.getText()).trim();
-    //             }
-
-    //             logger.info(`[DEBUG] "${elementName}" → Expected: ${expectedValue}, Actual: ${actualValue}`);
-
-    //             await expect(actualValue).toEqual(expectedValue);
-    //             logger.info(`"${elementName}" has expected value: "${expectedValue}"`);
-    //         } catch (error) {
-    //             logger.error(`Validation failed for "${elementName}": ${error.message}`);
-    //             throw error;
-    //         }
-    //     }
-    // }
+            value = await element.getValue();
+            value = value.replace(/[$,]/g, "").trim();
+            return !isNaN(value) && value !== "" ? Number(value) : value;
+        } else {
+            value = await element.getText();
+            return value.trim();
+        }
+    }
 
 
 

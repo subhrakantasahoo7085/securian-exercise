@@ -1,4 +1,7 @@
 {
+  "paths": {
+    "login": "/insights-tools/retirement-calculator.html"
+  },
   "TC01_verifywithSocialSecurityNo": {
     "currentAge": "40",
     "retirementAge": "68",
@@ -163,41 +166,7 @@
     "ssOverride": 4000,
     "errorMessage": "Planned retirement age must be greater than current age"
   },
-  "TC14_verifywithSocialSecurityNo": {
-    "currentAge": "40",
-    "retirementAge": "68",
-    "currentAnnualIncome": "100000",
-    "spouseIncome": "75000",
-    "retirementSavings": "500000",
-    "retirementContribution": "10",
-    "contributionIncrease": "0.25",
-    "socialSecurityIncome": "No"
-  },
-  "TC15_verifyWithSocialSecurityYes": {
-    "currentAge": "40",
-    "retirementAge": "68",
-    "currentAnnualIncome": "100000",
-    "spouseIncome": "75000",
-    "retirementSavings": "500000",
-    "retirementContribution": "10",
-    "contributionIncrease": "0.25",
-    "socialSecurityIncome": "Yes",
-    "relationshipStatus": "Single",
-    "ssOverride": 4000
-  },
-  "TC16_verifyWithMaritalStatusMarried": {
-    "currentAge": "40",
-    "retirementAge": "68",
-    "currentAnnualIncome": "100000",
-    "spouseIncome": "75000",
-    "retirementSavings": "500000",
-    "retirementContribution": "10",
-    "contributionIncrease": "0.25",
-    "socialSecurityIncome": "Yes",
-    "relationshipStatus": "Married",
-    "ssOverride": 4000
-  },
-  "TC17_withIncludeInflation": {
+  "TC14_withIncludeInflation": {
     "currentAge": "40",
     "retirementAge": "68",
     "currentAnnualIncome": "100000",
@@ -214,7 +183,7 @@
     "preReturn": "8",
     "postReturn": "5"
   },
-  "TC18_withExcludeInflation": {
+  "TC15_withExcludeInflation": {
     "currentAge": "40",
     "retirementAge": "68",
     "currentAnnualIncome": "100000",
@@ -231,5 +200,40 @@
     "incomePercent": "75",
     "preReturn": "8",
     "postReturn": "5"
+  },
+  "TC16_verifywithSocialSecurityNo": {
+    "currentAge": "40",
+    "retirementAge": "68",
+    "currentAnnualIncome": "100000",
+    "spouseIncome": "75000",
+    "retirementSavings": "500000",
+    "retirementContribution": "10",
+    "contributionIncrease": "0.25",
+    "socialSecurityIncome": "No"
+  },
+  
+  "TC17_verifyWithSocialSecurityYes": {
+    "currentAge": "40",
+    "retirementAge": "68",
+    "currentAnnualIncome": "100000",
+    "spouseIncome": "75000",
+    "retirementSavings": "500000",
+    "retirementContribution": "10",
+    "contributionIncrease": "0.25",
+    "socialSecurityIncome": "Yes",
+    "relationshipStatus": "Single",
+    "ssOverride": 4000
+  },
+  "TC18_verifyWithMaritalStatusMarried": {
+    "currentAge": "40",
+    "retirementAge": "68",
+    "currentAnnualIncome": "100000",
+    "spouseIncome": "75000",
+    "retirementSavings": "500000",
+    "retirementContribution": "10",
+    "contributionIncrease": "0.25",
+    "socialSecurityIncome": "Yes",
+    "relationshipStatus": "Married",
+    "ssOverride": 4000
   }
 }

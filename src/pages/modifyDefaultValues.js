@@ -17,11 +17,11 @@ class AdjustDefaultCalcPage {
     get adjustDefaultValuesLink() { return $("//a[@data-bs-target='#default-values-modal' and text()='Adjust default values']"); }
     get defaultValuesModal() { return $("//div[@id='default-values-modal']"); }
 
-    /* Adjusting the default values */
+    // Fills out the "Adjust Default Values" modal form based on the test data for the given test case.
     async defaultFillForm(testCaseName) {
         try {
             await utils.performElementAction(this.adjustDefaultValuesLink, 'click', null, 'Adjust default values link');
-            await this.defaultValuesModal.waitForDisplayed({ timeout: 10000 });   
+            await this.defaultValuesModal.waitForDisplayed({ timeout: 10000 });
 
             const data = await helperApp.readDataFromJson(testCaseName);
             await utils.performElementAction(this.additionalIncome, 'setValue', data.additionalIncome, 'Additional Income');
