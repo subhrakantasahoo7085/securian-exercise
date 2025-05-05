@@ -1,6 +1,6 @@
-import logger from '../features/support/logger.js';
-import utils from '../features/support/commonUtility.js';
-import helperApp from '../features/support/helperFunction.js';
+import logger from '../utils/logger.js';
+import utils from '../utils/commonUtility.js';
+import helperApp from '../utils/helperFunction.js';
 
 class AdjustDefaultCalcPage {
 
@@ -36,6 +36,7 @@ class AdjustDefaultCalcPage {
             await utils.performElementAction(this.retirementAnnualIncome, 'setValue', data.retirementAnnualIncome, 'Retirement Annual Income');
             await utils.performElementAction(this.preRetirementROI, 'setValue', data.preRetirementReturn, 'Pre Retirement Return');
             await utils.performElementAction(this.postRetirementROI, 'setValue', data.postRetirementReturn, 'Post Retirement Return');
+            await browser.saveScreenshot(`./screenshots/screenshot-${Date.now()}.png`);
             await this.saveChangesButton.click();
         } catch (error) {
             logger.error(`Error filling the default values: ${error}`);

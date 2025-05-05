@@ -1,8 +1,4 @@
 {
-  "homePageDetails": {
-    "heading": "Pre-retirement calculator",
-    "infoBanner": "Default calculator values"
-  },
   "TC01_verifywithSocialSecurityNo": {
     "currentAge": "40",
     "retirementAge": "68",
@@ -154,7 +150,20 @@
     "ssOverride": 4000,
     "errorMessage": "Age cannot be greater than 120"
   },
-  "TC13_verifywithSocialSecurityNo": {
+  "TC13_retirementAgeShouldNotBeLessThanCurrentAge": {
+    "currentAge": "25",
+    "retirementAge": "24",
+    "currentAnnualIncome": "100000",
+    "spouseIncome": "75000",
+    "retirementSavings": "500000",
+    "retirementContribution": "10",
+    "contributionIncrease": "0.25",
+    "socialSecurityIncome": "Yes",
+    "relationshipStatus": "Married",
+    "ssOverride": 4000,
+    "errorMessage": "Planned retirement age must be greater than current age"
+  },
+  "TC14_verifywithSocialSecurityNo": {
     "currentAge": "40",
     "retirementAge": "68",
     "currentAnnualIncome": "100000",
@@ -164,7 +173,7 @@
     "contributionIncrease": "0.25",
     "socialSecurityIncome": "No"
   },
-  "TC14_verifyWithSocialSecurityYes": {
+  "TC15_verifyWithSocialSecurityYes": {
     "currentAge": "40",
     "retirementAge": "68",
     "currentAnnualIncome": "100000",
@@ -176,7 +185,7 @@
     "relationshipStatus": "Single",
     "ssOverride": 4000
   },
-  "TC15_verifyWithMaritalStatusMarried": {
+  "TC16_verifyWithMaritalStatusMarried": {
     "currentAge": "40",
     "retirementAge": "68",
     "currentAnnualIncome": "100000",
@@ -188,7 +197,7 @@
     "relationshipStatus": "Married",
     "ssOverride": 4000
   },
-  "TC16_withIncludeInflation": {
+  "TC17_withIncludeInflation": {
     "currentAge": "40",
     "retirementAge": "68",
     "currentAnnualIncome": "100000",
@@ -198,15 +207,14 @@
     "contributionIncrease": "0.25",
     "socialSecurityIncome": "No",
     "additionalIncome": "500",
-      "retirementDuration": "20",
-      "inflationAdjustment": "yes",
-      "inflationRate": "4",
-      "incomePercent": "75",
-      "preReturn": "8",
-      "postReturn": "5"
-    
+    "retirementDuration": "20",
+    "inflationAdjustment": "yes",
+    "inflationRate": "4",
+    "incomePercent": "75",
+    "preReturn": "8",
+    "postReturn": "5"
   },
-  "TC17_withExcludeInflation": {
+  "TC18_withExcludeInflation": {
     "currentAge": "40",
     "retirementAge": "68",
     "currentAnnualIncome": "100000",
@@ -218,11 +226,10 @@
     "relationshipStatus": "Married",
     "ssOverride": 4000,
     "additionalIncome": "500",
-      "retirementDuration": "20",
-      "inflationAdjustment": "no",
-      "incomePercent": "75",
-      "preReturn": "8",
-      "postReturn": "5"
-    
+    "retirementDuration": "20",
+    "inflationAdjustment": "no",
+    "incomePercent": "75",
+    "preReturn": "8",
+    "postReturn": "5"
   }
 }

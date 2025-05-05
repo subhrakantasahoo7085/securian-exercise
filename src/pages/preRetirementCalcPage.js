@@ -1,11 +1,11 @@
-import logger from '../features/support/logger.js';
-import utils from '../features/support/commonUtility.js';
-import helperApp from '../features/support/helperFunction.js';
+import logger from '../utils/logger.js';
+import utils from '../utils/commonUtility.js';
+import helperApp from '../utils/helperFunction.js';
 
 class RetirementDetailsPage {
 
     get acceptCookiesBtn() {
-        return $("//button[@class='onetrust-close-btn-handler onetrust-close-btn-ui banner-close-button ot-close-icon']"); // Adjust selector as needed
+        return $("//button[contains(text(), 'Accept all cookies')]"); // Adjust selector as needed
     }
     get currentAge() { return $("//input[@id='current-age']"); }
     get retirementAge() { return $("//input[@id='retirement-age']"); }
@@ -44,7 +44,6 @@ class RetirementDetailsPage {
     get invalidSavingIncRate() { return $('//*[@id="invalid-savings-increase-rate-error"]') };
 
 
-
     async openCalculator() {
         try {
             await browser.reloadSession();
@@ -65,8 +64,10 @@ class RetirementDetailsPage {
             if (await this.acceptCookiesBtn.isDisplayed()) {
                 await this.acceptCookiesBtn.click();
                 logger.info("'Accept Cookies' button clicked successfully.");
+                await browser.saveScreenshot(`./screenshots/screenshot-${Date.now()}.png`);
             } else {
                 logger.info("'Accept Cookies' button is not displayed.");
+                await browser.saveScreenshot(`./screenshots/screenshot-${Date.now()}.png`);
             }
         } catch (error) {
             logger.error("Error in acceptCookiesIfPresent:", error.message);
@@ -107,7 +108,7 @@ class RetirementDetailsPage {
         }
     }
 
-    
+
 
     /* Clicking the buttons */
     async clickButton(button) {
@@ -116,6 +117,8 @@ class RetirementDetailsPage {
                 case 'Calculate':
                     await this.calculateButton.click();
                     logger.info('Clicked on Calculate Button');
+                    await browser.pause(2000);
+                    await browser.saveScreenshot(`./screenshots/screenshot-${Date.now()}.png`);
                     break;
                 case 'Clear-Form':
                     await this.clearFormButton.click();
@@ -137,9 +140,11 @@ class RetirementDetailsPage {
             await this.resultPage.waitForDisplayed({ timeout: 10000 });
             const displayValue = await this.resultPage.getCSSProperty('display');
             if (displayValue.value === 'none') {
+                await browser.saveScreenshot(`./screenshots/screenshot-${Date.now()}.png`);
                 logger.info('Result Section is not displayed');
                 throw new Error('Result Section is not displayed');
             } else {
+                //await browser.saveScreenshot(`./screenshots/screenshot-${Date.now()}.png`);
                 await utils.performElementAction(this.resultPage, 'isDisplayed', null, 'Result Page');
                 await utils.performElementAction(this.resultMessage, 'isDisplayed', null, 'Result Message');
                 await utils.performElementAction(this.resultChart, 'isDisplayed', null, 'Result Chart');
@@ -185,6 +190,9 @@ class RetirementDetailsPage {
                     await this.verifyCurrentAgeError(testCaseName);
                     break;
                 case 'retirementAgeMaxVal':
+                    await this.verifyRetirementAgeError(testCaseName);
+                    break;
+                case 'retirementAgeShouldNotBeLessThanCurrentAge':
                     await this.verifyRetirementAgeError(testCaseName);
                     break;
                 default:

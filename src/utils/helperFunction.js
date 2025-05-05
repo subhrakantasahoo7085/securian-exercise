@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import logger from '../support/logger.js';
+import logger from '../utils/logger.js';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -12,7 +12,7 @@ class HelperFunctions {
 
     /* Read data from retirementData.json file */
     readDataFromJson(key = null) {
-        const filePath = path.resolve(__dirname, '../../test-data/retirementData.json');
+        const filePath = path.resolve(__dirname, '../../resources/retirementData.json');
 
         try {
             // Ensure file exists
@@ -30,7 +30,7 @@ class HelperFunctions {
                 if (value === undefined) {
                     throw new Error(`Key "${key}" not found in JSON at: ${filePath}`);
                 }
-                logger.info(`Successfully fetched key "${key}" from JSON.`);
+                logger.info(`Successfully fetched data "${key}" from JSON.`);
                 return value;
             }
 

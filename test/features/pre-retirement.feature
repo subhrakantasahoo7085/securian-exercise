@@ -19,25 +19,26 @@ Feature: Calculating retirement savings using securian pre-retirement calculator
         When user clicks on Calculate button
         Then user should see the error messages for <testCaseName>
         Examples:
-            | testCaseName                |
-            | TC04_noCurrentAge           |
-            | TC05_noRetirementAge        |
-            | TC06_noCurrentIncome        |
-            | TC07_noCurrentTotalSavings  |
-            | TC08_noCurrentAnnualSavings |
-            | TC09_noSavingsIncreaseRate  |
-            | TC10_currAgeGrtThanRetAge   |
-            | TC11_currentAgeMaxVal       |
-            | TC12_retirementAgeMaxVal    |
+            | testCaseName                                    |
+            | TC04_noCurrentAge                               |
+            | TC05_noRetirementAge                            |
+            | TC06_noCurrentIncome                            |
+            | TC07_noCurrentTotalSavings                      |
+            | TC08_noCurrentAnnualSavings                     |
+            | TC09_noSavingsIncreaseRate                      |
+            | TC10_currAgeGrtThanRetAge                       |
+            | TC11_currentAgeMaxVal                           |
+            | TC12_retirementAgeMaxVal                        |
+            | TC13_retirementAgeShouldNotBeLessThanCurrentAge |
 
     Scenario Outline: Validting Social Security Details - <testCaseName>
         Given user fills the required details for <testCaseName>
         Then user should see the Social Security details for <testCaseName>
         Examples:
             | testCaseName                        |
-            | TC13_verifywithSocialSecurityNo     |
-            | TC14_verifyWithSocialSecurityYes    |
-            | TC15_verifyWithMaritalStatusMarried |
+            | TC14_verifywithSocialSecurityNo     |
+            | TC15_verifyWithSocialSecurityYes    |
+            | TC16_verifyWithMaritalStatusMarried |
 
 
     Scenario Outline: Fill details, modify default values and calculate retirement savings - of - <testCaseName>
@@ -47,5 +48,5 @@ Feature: Calculating retirement savings using securian pre-retirement calculator
         Then user should see the retirement savings details
         Examples:
             | testCaseName              |
-            | TC16_withIncludeInflation |
-            | TC17_withExcludeInflation |
+            | TC17_withIncludeInflation |
+            | TC18_withExcludeInflation |

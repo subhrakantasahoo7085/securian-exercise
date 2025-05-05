@@ -1,31 +1,31 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
-import Calculate from '../../pageobjects/preRetirementCalcPage.js';
-import defaultValues from '../../pageobjects/defaultPage.js';
+import Calc from '../../src/pages/preRetirementCalcPage.js';
+import DefaultValues from '../../src/pages/defaultPage.js';
 
 Given(/^user navigates to the retirement calculator page$/, async () => {
-    await Calculate.openCalculator();
+    await Calc.openCalculator();
 });
 
 Given(/^user fills the required details for ([^"]*)$/, async function (testCaseName) {        
-    await Calculate.fillPageData(testCaseName);
+    await Calc.fillPageData(testCaseName);
 });
 
 Given(/^user modifies the default values ([^"]*)$/, async function (testCaseName) {
-    await defaultValues.defaultFillForm(testCaseName);
+    await DefaultValues.defaultFillForm(testCaseName);
 });
 
 When(/^user clicks on ([^"]*) button$/, async (button) => {
-await Calculate.clickButton(button);
+await Calc.clickButton(button);
 }); 
 
 Then(/^user should see the retirement savings details$/, async () => {
-    await Calculate.validateResultPageInfo();
+    await Calc.validateResultPageInfo();
 });
 
 Then(/^user should see the error messages for ([^"]*)$/, async (testCaseName) => {     
-    await Calculate.validateErrorDetailsInfo(testCaseName);
+    await Calc.validateErrorDetailsInfo(testCaseName);
 });
 
 Then(/^user should see the Social Security details for ([^"]*)$/, async (testCaseName) => {
-    await Calculate.validateSocialSecurityDetails(testCaseName);
+    await Calc.validateSocialSecurityDetails(testCaseName);
 });

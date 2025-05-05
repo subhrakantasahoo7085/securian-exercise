@@ -4,7 +4,7 @@ import { execSync } from 'child_process';
 import path from 'path';
 
 export const config = {
-    specs: ['./features/*.feature'],
+    specs: ['./test/features/**/*.feature'],
 
     exclude: [],
 
@@ -36,11 +36,12 @@ export const config = {
     framework: 'cucumber',
 
     cucumberOpts: {
-        import: ['./features/step-definitions/preretirement.steps.js'],
-        //require: ['./features/step-definitions/*.js', './features/support/hooks.js'],
+        import: ['./test/steps/preretirement.steps.js'],
         backtrace: false,
         requireModule: [],
         dryRun: false,
+        failAmbiguous: true,
+        failWithNoAssertions: true,
         failFast: false,
         name: [],
         snippets: true,

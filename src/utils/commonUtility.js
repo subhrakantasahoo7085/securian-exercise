@@ -1,4 +1,4 @@
-import logger from '../support/logger.js';
+import logger from '../utils/logger.js';
 
 class UtilsClass {
     
