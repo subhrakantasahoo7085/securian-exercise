@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
 import Calc from '../../src/pages/preRetirementCalcPage.js';
-import DefaultValues from '../../src/pages/modifyDefaultValues.js';
+import DefaultValues from '../../src/pages/modifyDefaultValuesPage.js';
 
 Given(/^the user navigates to the retirement calculator page$/, async () => {
     await Calc.openCalculator();

@@ -36,7 +36,7 @@ class HelperFunctions {
                 if (value === undefined) {
                     throw new Error(`Key "${key}" not found in JSON at: ${filePath}`);
                 }
-                logger.info(`Successfully fetched data "${key}" from JSON.`);
+                logger.info(`Successfully fetched data "${key}" from retirementData JSON file.`);
                 return value;
             }
 
