@@ -14,7 +14,7 @@ This project is a WebdriverIO-based automation framework for testing the Pre-Ret
 
 ## **Prerequisites**
 Ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (v16 or later)
+- [Node.js](https://nodejs.org/) (v18 or later)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 - A browser (e.g., Chrome)
 
@@ -24,4 +24,4 @@ Ensure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd Securian_Exercise
+   cd securian-exercise
