@@ -1,7 +1,7 @@
 import logger from '../utils/logger.js';
 import utils from '../utils/commonUtility.js';
 import helperApp from '../utils/helperFunction.js';
-import config from '../../src/config/appConfig.js';
+import env from '../../src/config/appConfig.js';
 
 
 class RetirementDetailsPage {
@@ -71,7 +71,7 @@ class RetirementDetailsPage {
         try {
             await browser.reloadSession();
             //await browser.url(config.BASE_URL);
-            await browser.url(`${config.baseUrl}${config.paths.login}`);
+            await browser.url(`${env.baseUrl}${env.paths.login}`);
             await this.currentAge.waitForDisplayed({ timeout: 5000 });
             await browser.maximizeWindow();
             await this.acceptCookiesIfPresent();

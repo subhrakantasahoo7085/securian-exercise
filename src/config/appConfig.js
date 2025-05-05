@@ -13,9 +13,9 @@ const raw = readFileSync(resolve(__dirname, '../../resources/retirementData.json
 const jsonData = JSON.parse(raw);
 
 // Combine baseUrl with other config
-const config = {
+const env = {
   baseUrl: 'https://www.securian.com',
   ...jsonData
 };
 
-export default config;
+export default env;
