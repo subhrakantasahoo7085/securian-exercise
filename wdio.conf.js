@@ -23,7 +23,7 @@ export const config = {
     ],
 
     capabilities: [{
-        maxInstances: 1, // Number of instances of the browser to run
+        maxInstances: 3, // Number of instances of the browser to run
         browserName: 'chrome', // Browser to use (e.g., 'chrome', 'firefox')
         acceptInsecureCerts: true // Accept insecure SSL certificates
     }],

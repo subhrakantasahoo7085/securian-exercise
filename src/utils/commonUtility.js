@@ -28,7 +28,6 @@ class UtilsClass {
                 getAttribute: () => this.getElementAttribute(targetElement, value, elementName),
                 clearValue: () => this.clearElementValue(targetElement, elementName),
                 getCSSProperty: () => this.getElementCSSProperty(targetElement, value, elementName),
-                scrollIntoView: () => this.scrollElementIntoView(targetElement, elementName),
             };
 
             // Execute the corresponding action
