@@ -1,7 +1,6 @@
 import logger from '../utils/logger.js';
 import utils from '../utils/commonUtility.js';
 import helperApp from '../utils/helperFunction.js';
-import env from '../../src/config/appConfig.js';
 
 
 class RetirementDetailsPage {
@@ -71,7 +70,7 @@ class RetirementDetailsPage {
         try {
             await browser.reloadSession();
             //await browser.url(config.BASE_URL);
-            await browser.url(`${env.baseUrl}${env.paths.login}`);
+            await browser.url(`https://www.securian.com/insights-tools/retirement-calculator.html`);
             await this.currentAge.waitForDisplayed({ timeout: 5000 });
             await browser.maximizeWindow();
             await this.acceptCookiesIfPresent();
@@ -131,7 +130,6 @@ class RetirementDetailsPage {
                 case 'Calculate':
                     await this.calculateButton.click();
                     logger.info('Clicked on Calculate Button');
-                    await browser.pause(2000);
                     await browser.saveScreenshot(`./screenshots/screenshot-${Date.now()}.png`);
                     break;
                 case 'Clear-Form':

@@ -1,7 +1,4 @@
 {
-  "paths": {
-    "login": "/insights-tools/retirement-calculator.html"
-  },
   "TC01_verifywithSocialSecurityNo": {
     "currentAge": "40",
     "retirementAge": "68",

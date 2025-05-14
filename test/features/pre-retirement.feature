@@ -1,11 +1,11 @@
 Feature: Calculating retirement savings using securian pre-retirement calculator
 
     Background: PreRetirementCalc page
-        Given the user navigates to the retirement calculator page
+        Given user navigates to the retirement calculator page
 
     Scenario Outline: Calculate retirement savings for <testCaseName>
-        Given the user has entered valid details for <testCaseName>
-        When the user clicks the "Calculate" button
+        Given user fills valid details for <testCaseName>
+        When user clicks the "Calculate" button
         Then the estimated retirement savings should be displayed
         Examples:
             | testCaseName                        |
@@ -15,8 +15,8 @@ Feature: Calculating retirement savings using securian pre-retirement calculator
 
 
     Scenario Outline: Fill details and calculate retirement savings - of - <testCaseName>
-        Given the user has entered valid details for <testCaseName>
-        When the user clicks the "Calculate" button
+        Given user fills valid details for <testCaseName>
+        When user clicks the "Calculate" button
         Then user should see the error messages for <testCaseName>
         Examples:
             | testCaseName                                    |
@@ -33,9 +33,9 @@ Feature: Calculating retirement savings using securian pre-retirement calculator
     
 
     Scenario Outline: Fill details, modify default values and calculate retirement savings - of - <testCaseName>
-        Given the user has entered valid details for <testCaseName>
-        And the user modifies the default values <testCaseName>
-        When the user clicks the "Calculate" button
+        Given user fills valid details for <testCaseName>
+        And user modifies the default values <testCaseName>
+        When user clicks the "Calculate" button
         Then the estimated retirement savings should be displayed
         Examples:
             | testCaseName              |
@@ -44,7 +44,7 @@ Feature: Calculating retirement savings using securian pre-retirement calculator
 
 
     Scenario Outline: Validting Social Security Details - <testCaseName>
-        Given the user has entered valid details for <testCaseName>
+        Given user fills valid details for <testCaseName>
         Then the user should see the Social Security details for <testCaseName>
         Examples:
             | testCaseName                        |

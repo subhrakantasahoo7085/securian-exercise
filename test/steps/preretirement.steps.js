@@ -2,19 +2,19 @@ import { Given, When, Then } from '@wdio/cucumber-framework';
 import Calc from '../../src/pages/preRetirementCalcPage.js';
 import DefaultValues from '../../src/pages/modifyDefaultValuesPage.js';
 
-Given(/^the user navigates to the retirement calculator page$/, async () => {
+Given(/^user navigates to the retirement calculator page$/, async () => {
     await Calc.openCalculator();
 });
 
-Given(/^the user has entered valid details for ([^"]*)$/, async function (testCaseName) {
+Given(/^user fills valid details for ([^"]*)$/, async function (testCaseName) {
     await Calc.fillPageData(testCaseName);
 });
 
-Given(/^the user modifies the default values ([^"]*)$/, async function (testCaseName) {
+Given(/^user modifies the default values ([^"]*)$/, async function (testCaseName) {
     await DefaultValues.defaultFillForm(testCaseName);
 });
 
-When(/^the user clicks the "([^"]*)" button$/, async (button) => {
+When(/^user clicks the "([^"]*)" button$/, async (button) => {
     await Calc.clickButton(button);
 });
 
