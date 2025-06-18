@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio run wdio.conf.js",
+    "test": "nyc wdio run wdio.conf.js",
     "allure:generate": "npx allure generate allure-results --clean -o allure-report",
     "allure:open": "npx allure open allure-report",
     "allure:serve": "npm run allure:generate && npm run allure:open",
     "start": "npm test"
   },
+  "nyc": {
+  "include": [
+    "src/pages/*.js"
+  ],
+  "reporter": [
+    "text",
+    "html"
+  ]
+},
   "type": "module",
   "keywords": [],
   "author": "Subhrakanta Sahoo",
@@ -23,10 +32,11 @@
     "@wdio/selenium-standalone-service": "^8.14.0",
     "@wdio/spec-reporter": "^9.12.6",
     "allure-commandline": "^2.33.0",
-    "chromedriver": "^135.0.2",
+    "chromedriver": "^137.0.4",
     "cucumber": "^6.0.7",
     "eslint": "^9.25.1",
     "image-size": "^2.0.2",
+    "nyc": "^17.1.0",
     "wdio-chromedriver-service": "^8.1.1",
     "wdio-wait-for": "^3.1.0"
   },
