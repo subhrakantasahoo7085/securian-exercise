@@ -3,21 +3,35 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "nyc wdio run wdio.conf.js",
+    "test": "npm run test:e2e && npm run test:helper",
+    "test:e2e": "nyc wdio run wdio.conf.js",
+    "test:helper": "nyc mocha test-helper/*.test.js",
+    "test:cov": "nyc npm run test",
     "allure:generate": "npx allure generate allure-results --clean -o allure-report",
     "allure:open": "npx allure open allure-report",
     "allure:serve": "npm run allure:generate && npm run allure:open",
-    "start": "npm test"
+    "start": "npm run test"
   },
   "nyc": {
-  "include": [
-    "src/pages/*.js"
-  ],
-  "reporter": [
-    "text",
-    "html"
-  ]
-},
+    "all": true,
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "include": [
+      "src/pages/**/*.js",
+      "src/utils/**/*.js",
+      "src/api/**/*.js"
+    ],
+    "exclude": [
+      "test/**/*.js",
+      "test/**/*.feature",
+      "wdio.conf.js"
+    ],
+    "extension": [
+      ".js"
+    ]
+  },
   "type": "module",
   "keywords": [],
   "author": "Subhrakanta Sahoo",
