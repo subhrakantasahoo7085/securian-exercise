@@ -1,0 +1,7 @@
+{
+  "all": true,
+  "include": ["src/pages/**/*.js"],
+  "exclude": ["test/utils/**/*.js"],
+  "reporter": ["text", "html"],
+  "report-dir": "./coverage"
+}

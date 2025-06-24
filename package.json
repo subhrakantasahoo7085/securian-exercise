@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:e2e && npm run test:helper",
+    "test": "nyc npx --no-install wdio run wdio.conf.js",
     "test:e2e": "nyc wdio run wdio.conf.js",
     "test:helper": "nyc mocha test-helper/*.test.js",
     "test:cov": "nyc npm run test",
+    "coverage:open": "start ./coverage/index.html",
     "allure:generate": "npx allure generate allure-results --clean -o allure-report",
     "allure:open": "npx allure open allure-report",
     "allure:serve": "npm run allure:generate && npm run allure:open",
-    "start": "npm run test"
+    "start": "npm run test",
+    "test:allure": "npm run test && npm run allure:generate && npm run allure:open"
   },
   "nyc": {
     "all": true,
@@ -20,8 +22,7 @@
     ],
     "include": [
       "src/pages/**/*.js",
-      "src/utils/**/*.js",
-      "src/api/**/*.js"
+      "src/utils/**/*.js"
     ],
     "exclude": [
       "test/**/*.js",
@@ -30,6 +31,9 @@
     ],
     "extension": [
       ".js"
+    ],
+    "require": [
+      "@babel/register"
     ]
   },
   "type": "module",
@@ -38,6 +42,8 @@
   "license": "ISC",
   "description": "WebdriverIO project using Cucumber framework",
   "devDependencies": {
+    "@babel/preset-env": "^7.27.2",
+    "@babel/register": "^7.27.1",
     "@wdio/allure-reporter": "^9.12.6",
     "@wdio/cli": "^8.44.1",
     "@wdio/cucumber-framework": "^9.12.6",
@@ -46,17 +52,18 @@
     "@wdio/selenium-standalone-service": "^8.14.0",
     "@wdio/spec-reporter": "^9.12.6",
     "allure-commandline": "^2.33.0",
+    "chai": "^5.2.0",
     "chromedriver": "^137.0.4",
-    "cucumber": "^6.0.7",
     "eslint": "^9.25.1",
     "image-size": "^2.0.2",
+    "mocha": "^11.7.0",
     "nyc": "^17.1.0",
+    "sinon": "^21.0.0",
     "wdio-chromedriver-service": "^8.1.1",
     "wdio-wait-for": "^3.1.0"
   },
   "dependencies": {
     "dotenv": "^16.5.0",
-    "wdio": "^6.0.1",
     "webdriverio": "^8.44.1",
     "winston": "^3.17.0"
   }

@@ -1,389 +1,380 @@
-2025-06-19 22:44:44 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:44:44 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:44:45 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:44:46 [INFO]: Successfully fetched data "TC01_verifywithSocialSecurityNo" from retirementData JSON file.
-2025-06-19 22:44:46 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:44:51 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:44:52 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:44:52 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:44:52 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:44:53 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:44:53 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:44:54 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:44:54 [INFO]: Clicked on element: Select Social Security Benefits as No
-2025-06-19 22:44:54 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:44:56 [INFO]: Clicked on Calculate Button
-2025-06-19 22:44:56 [INFO]: Element "Result Page" is displayed: true
-2025-06-19 22:44:56 [INFO]: Element "Result Message" is displayed: true
-2025-06-19 22:44:56 [INFO]: Element "Result Chart" is displayed: true
-2025-06-19 22:44:57 [INFO]: Element "Result Table" is displayed: true
-2025-06-19 22:44:57 [INFO]: Element "Email My Results Button" is clickable: true
-2025-06-19 22:44:57 [INFO]: Element "Edit Info Button" is clickable: true
-2025-06-19 22:44:57 [INFO]: Element "See Full Results Button" is clickable: true
-2025-06-19 22:45:07 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:45:07 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:45:08 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:45:08 [INFO]: Successfully fetched data "TC02_verifyWithSocialSecurityYes" from retirementData JSON file.
-2025-06-19 22:45:08 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:45:09 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:45:09 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:45:10 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:45:11 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:45:11 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:45:19 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:45:20 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:45:21 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:45:22 [INFO]: Clicked on element: Marital Status as Single
-2025-06-19 22:45:24 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:45:24 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:45:25 [INFO]: Clicked on Calculate Button
-2025-06-19 22:45:27 [INFO]: Element "Result Page" is displayed: true
-2025-06-19 22:45:27 [INFO]: Element "Result Message" is displayed: true
-2025-06-19 22:45:28 [INFO]: Element "Result Chart" is displayed: true
-2025-06-19 22:45:28 [INFO]: Element "Result Table" is displayed: true
-2025-06-19 22:45:28 [INFO]: Element "Email My Results Button" is clickable: true
-2025-06-19 22:45:28 [INFO]: Element "Edit Info Button" is clickable: true
-2025-06-19 22:45:28 [INFO]: Element "See Full Results Button" is clickable: true
-2025-06-19 22:45:41 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:45:42 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:45:43 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:45:43 [INFO]: Successfully fetched data "TC03_verifyWtihMaritalStatusMarried" from retirementData JSON file.
-2025-06-19 22:45:43 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:45:51 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:45:51 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:45:51 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:45:52 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:45:52 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:45:53 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:45:53 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:45:53 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:45:54 [INFO]: Clicked on element: Marital Status as Married
-2025-06-19 22:45:54 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:45:55 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:45:55 [INFO]: Clicked on Calculate Button
-2025-06-19 22:45:56 [INFO]: Element "Result Page" is displayed: true
-2025-06-19 22:45:56 [INFO]: Element "Result Message" is displayed: true
-2025-06-19 22:45:57 [INFO]: Element "Result Chart" is displayed: true
-2025-06-19 22:45:57 [INFO]: Element "Result Table" is displayed: true
-2025-06-19 22:45:57 [INFO]: Element "Email My Results Button" is clickable: true
-2025-06-19 22:45:57 [INFO]: Element "Edit Info Button" is clickable: true
-2025-06-19 22:45:57 [INFO]: Element "See Full Results Button" is clickable: true
-2025-06-19 22:46:06 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:46:06 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:46:07 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:46:07 [INFO]: Successfully fetched data "TC04_noCurrentAge" from retirementData JSON file.
-2025-06-19 22:46:07 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:46:09 [INFO]: Set value "BLANK" on element: Current Age
-2025-06-19 22:46:09 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:46:10 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:46:10 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:46:13 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:46:14 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:46:14 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:46:15 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:46:15 [INFO]: Clicked on element: Marital Status as Married
-2025-06-19 22:46:16 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:46:16 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:46:16 [INFO]: Clicked on Calculate Button
-2025-06-19 22:46:17 [INFO]: Successfully fetched data "TC04_noCurrentAge" from retirementData JSON file.
-2025-06-19 22:46:17 [INFO]: [Current Age] Error message validation passed.
-2025-06-19 22:46:27 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:46:27 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:46:28 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:46:28 [INFO]: Successfully fetched data "TC05_noRetirementAge" from retirementData JSON file.
-2025-06-19 22:46:28 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:46:35 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:46:36 [INFO]: Set value "BLANK" on element: Retirement Age
-2025-06-19 22:46:37 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:46:37 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:46:37 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:46:38 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:46:38 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:46:39 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:46:39 [INFO]: Clicked on element: Marital Status as Married
-2025-06-19 22:46:40 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:46:40 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:46:40 [INFO]: Clicked on Calculate Button
-2025-06-19 22:46:41 [INFO]: Successfully fetched data "TC05_noRetirementAge" from retirementData JSON file.
-2025-06-19 22:46:41 [INFO]: [Retirement Age] Error message validation passed.
-2025-06-19 22:46:49 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:46:49 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:46:50 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:46:50 [INFO]: Successfully fetched data "TC06_noCurrentIncome" from retirementData JSON file.
-2025-06-19 22:46:50 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:47:03 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:47:03 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:47:04 [INFO]: Set value "BLANK" on element: Current Annual Income
-2025-06-19 22:47:04 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:47:05 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:47:05 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:47:06 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:47:06 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:47:07 [INFO]: Clicked on element: Marital Status as Married
-2025-06-19 22:47:08 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:47:08 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:47:08 [INFO]: Clicked on Calculate Button
-2025-06-19 22:47:09 [INFO]: Successfully fetched data "TC06_noCurrentIncome" from retirementData JSON file.
-2025-06-19 22:47:09 [INFO]: [Current Income] Error message validation passed.
-2025-06-19 22:47:17 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:47:18 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:47:19 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:47:19 [INFO]: Successfully fetched data "TC07_noCurrentTotalSavings" from retirementData JSON file.
-2025-06-19 22:47:19 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:47:27 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:47:27 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:47:28 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:47:28 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:47:28 [INFO]: Set value "BLANK" on element: Retirement Savings
-2025-06-19 22:47:29 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:47:29 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:47:29 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:47:30 [INFO]: Clicked on element: Marital Status as Married
-2025-06-19 22:47:32 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:47:32 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:47:32 [INFO]: Clicked on Calculate Button
-2025-06-19 22:47:33 [INFO]: Successfully fetched data "TC07_noCurrentTotalSavings" from retirementData JSON file.
-2025-06-19 22:47:33 [INFO]: [Current Total Savings] Error message validation passed.
-2025-06-19 22:47:43 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:47:43 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:47:44 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:47:44 [INFO]: Successfully fetched data "TC08_noCurrentAnnualSavings" from retirementData JSON file.
-2025-06-19 22:47:44 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:47:51 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:47:51 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:47:52 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:47:53 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:47:53 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:47:54 [INFO]: Set value "BLANK" on element: Retirement Contribution
-2025-06-19 22:47:54 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:47:54 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:47:55 [INFO]: Clicked on element: Marital Status as Married
-2025-06-19 22:47:55 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:47:56 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:47:57 [INFO]: Clicked on Calculate Button
-2025-06-19 22:47:58 [INFO]: Successfully fetched data "TC08_noCurrentAnnualSavings" from retirementData JSON file.
-2025-06-19 22:47:58 [INFO]: [Current Annual Savings] Error message validation passed.
-2025-06-19 22:48:08 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:48:08 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:48:09 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:48:09 [INFO]: Successfully fetched data "TC09_noSavingsIncreaseRate" from retirementData JSON file.
-2025-06-19 22:48:09 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:48:18 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:48:19 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:48:19 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:48:20 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:48:20 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:48:21 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:48:21 [INFO]: Set value "BLANK" on element: Increase Annual Rate Savings
-2025-06-19 22:48:22 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:48:22 [INFO]: Clicked on element: Marital Status as Married
-2025-06-19 22:48:23 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:48:23 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:48:23 [INFO]: Clicked on Calculate Button
-2025-06-19 22:48:24 [INFO]: Successfully fetched data "TC09_noSavingsIncreaseRate" from retirementData JSON file.
-2025-06-19 22:48:24 [INFO]: [Savings Increase Rate] Error message validation passed.
-2025-06-19 22:48:38 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:48:39 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:48:40 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:48:40 [INFO]: Successfully fetched data "TC10_currAgeGrtThanRetAge" from retirementData JSON file.
-2025-06-19 22:48:40 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:48:46 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:48:47 [INFO]: Set value "28" on element: Retirement Age
-2025-06-19 22:48:48 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:48:48 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:48:49 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:48:49 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:48:50 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:48:50 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:48:51 [INFO]: Clicked on element: Marital Status as Married
-2025-06-19 22:48:51 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:48:51 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:48:52 [INFO]: Clicked on Calculate Button
-2025-06-19 22:48:52 [INFO]: Successfully fetched data "TC10_currAgeGrtThanRetAge" from retirementData JSON file.
-2025-06-19 22:48:52 [INFO]: [Retirement Age] Error message validation passed.
-2025-06-19 22:49:02 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:49:03 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:49:04 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:49:04 [INFO]: Successfully fetched data "TC11_currentAgeMaxVal" from retirementData JSON file.
-2025-06-19 22:49:04 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:49:12 [INFO]: Set value "121" on element: Current Age
-2025-06-19 22:49:13 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:49:14 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:49:14 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:49:15 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:49:15 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:49:16 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:49:16 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:49:17 [INFO]: Clicked on element: Marital Status as Married
-2025-06-19 22:49:17 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:49:18 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:49:18 [INFO]: Clicked on Calculate Button
-2025-06-19 22:49:18 [INFO]: Successfully fetched data "TC11_currentAgeMaxVal" from retirementData JSON file.
-2025-06-19 22:49:19 [INFO]: [Current Age] Error message validation passed.
-2025-06-19 22:49:31 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:49:32 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:49:33 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:49:33 [INFO]: Successfully fetched data "TC12_retirementAgeMaxVal" from retirementData JSON file.
-2025-06-19 22:49:33 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:49:39 [INFO]: Set value "100" on element: Current Age
-2025-06-19 22:49:39 [INFO]: Set value "121" on element: Retirement Age
-2025-06-19 22:49:40 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:49:41 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:49:41 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:49:42 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:49:42 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:49:42 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:49:43 [INFO]: Clicked on element: Marital Status as Married
-2025-06-19 22:49:43 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:49:44 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:49:44 [INFO]: Clicked on Calculate Button
-2025-06-19 22:49:44 [INFO]: Successfully fetched data "TC12_retirementAgeMaxVal" from retirementData JSON file.
-2025-06-19 22:49:45 [INFO]: [Retirement Age] Error message validation passed.
-2025-06-19 22:49:55 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:49:55 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:49:56 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:49:56 [INFO]: Successfully fetched data "TC13_retirementAgeShouldNotBeLessThanCurrentAge" from retirementData JSON file.
-2025-06-19 22:49:56 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:50:05 [INFO]: Set value "25" on element: Current Age
-2025-06-19 22:50:05 [INFO]: Set value "24" on element: Retirement Age
-2025-06-19 22:50:06 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:50:07 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:50:08 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:50:09 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:50:09 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:50:10 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:50:10 [INFO]: Clicked on element: Marital Status as Married
-2025-06-19 22:50:11 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:50:11 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:50:11 [INFO]: Clicked on Calculate Button
-2025-06-19 22:50:12 [INFO]: Successfully fetched data "TC13_retirementAgeShouldNotBeLessThanCurrentAge" from retirementData JSON file.
-2025-06-19 22:50:12 [INFO]: [Retirement Age] Error message validation passed.
-2025-06-19 22:50:24 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:50:25 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:50:26 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:50:26 [INFO]: Successfully fetched data "TC14_withIncludeInflation" from retirementData JSON file.
-2025-06-19 22:50:26 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:50:35 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:50:36 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:50:37 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:50:37 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:50:38 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:50:38 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:50:39 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:50:39 [INFO]: Clicked on element: Select Social Security Benefits as No
-2025-06-19 22:50:40 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:50:40 [INFO]: Clicked on element: Adjust default values link
-2025-06-19 22:50:40 [INFO]: Successfully fetched data "TC14_withIncludeInflation" from retirementData JSON file.
-2025-06-19 22:50:41 [INFO]: Set value "500" on element: Additional Income
-2025-06-19 22:50:41 [INFO]: Set value "20" on element: Retirement Duration
-2025-06-19 22:50:42 [INFO]: Clicked on element: Include Inflation
-2025-06-19 22:50:44 [INFO]: Set value "null" on element: Expected Inflation Rate
-2025-06-19 22:50:44 [INFO]: Set value "null" on element: Retirement Annual Income
-2025-06-19 22:50:44 [INFO]: Set value "null" on element: Pre Retirement Return
-2025-06-19 22:50:45 [INFO]: Set value "null" on element: Post Retirement Return
-2025-06-19 22:50:46 [INFO]: Clicked on Calculate Button
-2025-06-19 22:50:47 [INFO]: Element "Result Page" is displayed: true
-2025-06-19 22:50:48 [INFO]: Element "Result Message" is displayed: true
-2025-06-19 22:50:48 [INFO]: Element "Result Chart" is displayed: true
-2025-06-19 22:50:48 [INFO]: Element "Result Table" is displayed: true
-2025-06-19 22:50:48 [INFO]: Element "Email My Results Button" is clickable: true
-2025-06-19 22:50:48 [INFO]: Element "Edit Info Button" is clickable: true
-2025-06-19 22:50:48 [INFO]: Element "See Full Results Button" is clickable: true
-2025-06-19 22:50:57 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:50:58 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:50:59 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:50:59 [INFO]: Successfully fetched data "TC15_withExcludeInflation" from retirementData JSON file.
-2025-06-19 22:50:59 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:51:09 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:51:09 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:51:10 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:51:10 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:51:11 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:51:12 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:51:12 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:51:13 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:51:13 [INFO]: Clicked on element: Marital Status as Married
-2025-06-19 22:51:14 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:51:14 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:51:14 [INFO]: Clicked on element: Adjust default values link
-2025-06-19 22:51:14 [INFO]: Successfully fetched data "TC15_withExcludeInflation" from retirementData JSON file.
-2025-06-19 22:51:15 [INFO]: Set value "500" on element: Additional Income
-2025-06-19 22:51:15 [INFO]: Set value "20" on element: Retirement Duration
-2025-06-19 22:51:16 [INFO]: Clicked on element: Include Inflation
-2025-06-19 22:51:17 [INFO]: Set value "null" on element: Expected Inflation Rate
-2025-06-19 22:51:18 [INFO]: Set value "null" on element: Retirement Annual Income
-2025-06-19 22:51:18 [INFO]: Set value "null" on element: Pre Retirement Return
-2025-06-19 22:51:19 [INFO]: Set value "null" on element: Post Retirement Return
-2025-06-19 22:51:20 [INFO]: Clicked on Calculate Button
-2025-06-19 22:51:21 [INFO]: Element "Result Page" is displayed: true
-2025-06-19 22:51:22 [INFO]: Element "Result Message" is displayed: true
-2025-06-19 22:51:22 [INFO]: Element "Result Chart" is displayed: true
-2025-06-19 22:51:22 [INFO]: Element "Result Table" is displayed: true
-2025-06-19 22:51:22 [INFO]: Element "Email My Results Button" is clickable: true
-2025-06-19 22:51:23 [INFO]: Element "Edit Info Button" is clickable: true
-2025-06-19 22:51:23 [INFO]: Element "See Full Results Button" is clickable: true
-2025-06-19 22:51:32 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:51:33 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:51:34 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:51:34 [INFO]: Successfully fetched data "TC16_verifywithSocialSecurityNo" from retirementData JSON file.
-2025-06-19 22:51:34 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:51:41 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:51:42 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:51:42 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:51:43 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:51:44 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:51:44 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:51:44 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:51:45 [INFO]: Clicked on element: Select Social Security Benefits as No
-2025-06-19 22:51:45 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:51:45 [INFO]: Successfully fetched data "TC16_verifywithSocialSecurityNo" from retirementData JSON file.
-2025-06-19 22:51:45 [INFO]: socialSecurityBenefits is selected as expected.
-2025-06-19 22:51:45 [INFO]: No Social Security Benefits
-2025-06-19 22:51:56 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:51:57 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:51:57 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:51:57 [INFO]: Successfully fetched data "TC17_verifyWithSocialSecurityYes" from retirementData JSON file.
-2025-06-19 22:51:57 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:52:06 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:52:06 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:52:07 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:52:07 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:52:08 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:52:08 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:52:09 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:52:09 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:52:11 [INFO]: Clicked on element: Marital Status as Single
-2025-06-19 22:52:11 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:52:11 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:52:11 [INFO]: Successfully fetched data "TC17_verifyWithSocialSecurityYes" from retirementData JSON file.
-2025-06-19 22:52:12 [INFO]: socialSecurityBenefits is selected as expected.
-2025-06-19 22:52:12 [INFO]: Social Security Benefits is added
-2025-06-19 22:52:13 [INFO]: Element "Marital Status Fields" is displayed: true
-2025-06-19 22:52:13 [INFO]: maritalStatus is selected as expected.
-2025-06-19 22:52:13 [INFO]: Marital Status: Single
-2025-06-19 22:52:13 [INFO]: "socialSecurityOverrideAmt" has expected value: "4000"
-2025-06-19 22:52:13 [INFO]: Social Security Override Amount:
-2025-06-19 22:52:21 [INFO]: Checking if the 'Accept Cookies' button is displayed...
-2025-06-19 22:52:22 [INFO]: 'Accept Cookies' button clicked successfully.
-2025-06-19 22:52:23 [INFO]: Retirement calculator page opened successfully.
-2025-06-19 22:52:23 [INFO]: Successfully fetched data "TC18_verifyWithMaritalStatusMarried" from retirementData JSON file.
-2025-06-19 22:52:23 [INFO]: Filling out the retirement calculator form...
-2025-06-19 22:52:30 [INFO]: Set value "40" on element: Current Age
-2025-06-19 22:52:30 [INFO]: Set value "68" on element: Retirement Age
-2025-06-19 22:52:31 [INFO]: Set value "100000" on element: Current Annual Income
-2025-06-19 22:52:31 [INFO]: Set value "75000" on element: Spouse Annual Income
-2025-06-19 22:52:32 [INFO]: Set value "500000" on element: Retirement Savings
-2025-06-19 22:52:32 [INFO]: Set value "10" on element: Retirement Contribution
-2025-06-19 22:52:33 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
-2025-06-19 22:52:33 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
-2025-06-19 22:52:35 [INFO]: Clicked on element: Marital Status as Married
-2025-06-19 22:52:35 [INFO]: Set value "4000" on element: Social Security override amount
-2025-06-19 22:52:36 [INFO]: Retirement calculator form filled successfully.
-2025-06-19 22:52:36 [INFO]: Successfully fetched data "TC18_verifyWithMaritalStatusMarried" from retirementData JSON file.
-2025-06-19 22:52:36 [INFO]: socialSecurityBenefits is selected as expected.
-2025-06-19 22:52:36 [INFO]: Social Security Benefits is added
-2025-06-19 22:52:36 [INFO]: Element "Marital Status Fields" is displayed: true
-2025-06-19 22:52:36 [INFO]: maritalStatus is selected as expected.
-2025-06-19 22:52:36 [INFO]: Marital Status: Married
-2025-06-19 22:52:37 [INFO]: "socialSecurityOverrideAmt" has expected value: "4000"
-2025-06-19 22:52:37 [INFO]: Social Security Override Amount:
+2025-06-23 20:44:49 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:44:49 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:44:50 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:44:50 [INFO]: Successfully fetched data "TC01_verifywithSocialSecurityNo" from retirementData JSON file.
+2025-06-23 20:44:50 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:44:56 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:44:56 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:44:57 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:44:58 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:44:58 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:44:59 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:44:59 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:44:59 [INFO]: Clicked on element: Select Social Security Benefits as No
+2025-06-23 20:45:00 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:45:00 [INFO]: Clicked on Calculate Button
+2025-06-23 20:45:01 [INFO]: Element "Result Page" is displayed: true
+2025-06-23 20:45:01 [INFO]: Element "Result Message" is displayed: true
+2025-06-23 20:45:01 [INFO]: Element "Result Chart" is displayed: true
+2025-06-23 20:45:01 [INFO]: Element "Result Table" is displayed: true
+2025-06-23 20:45:01 [INFO]: Element "Email My Results Button" is clickable: true
+2025-06-23 20:45:02 [INFO]: Element "Edit Info Button" is clickable: true
+2025-06-23 20:45:02 [INFO]: Element "See Full Results Button" is clickable: true
+2025-06-23 20:45:10 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:45:11 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:45:12 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:45:12 [INFO]: Successfully fetched data "TC02_verifyWithSocialSecurityYes" from retirementData JSON file.
+2025-06-23 20:45:12 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:45:20 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:45:20 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:45:20 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:45:21 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:45:21 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:45:21 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:45:22 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:45:22 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:45:23 [INFO]: Clicked on element: Marital Status as Single
+2025-06-23 20:45:23 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:45:24 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:45:24 [INFO]: Clicked on Calculate Button
+2025-06-23 20:45:25 [INFO]: Element "Result Page" is displayed: true
+2025-06-23 20:45:25 [INFO]: Element "Result Message" is displayed: true
+2025-06-23 20:45:25 [INFO]: Element "Result Chart" is displayed: true
+2025-06-23 20:45:25 [INFO]: Element "Result Table" is displayed: true
+2025-06-23 20:45:25 [INFO]: Element "Email My Results Button" is clickable: true
+2025-06-23 20:45:25 [INFO]: Element "Edit Info Button" is clickable: true
+2025-06-23 20:45:26 [INFO]: Element "See Full Results Button" is clickable: true
+2025-06-23 20:45:35 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:45:35 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:45:36 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:45:36 [INFO]: Successfully fetched data "TC03_verifyWtihMaritalStatusMarried" from retirementData JSON file.
+2025-06-23 20:45:36 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:45:40 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:45:41 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:45:41 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:45:42 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:45:42 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:45:43 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:45:43 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:45:44 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:45:44 [INFO]: Clicked on element: Marital Status as Married
+2025-06-23 20:45:45 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:45:45 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:45:45 [INFO]: Clicked on Calculate Button
+2025-06-23 20:45:46 [INFO]: Element "Result Page" is displayed: true
+2025-06-23 20:45:46 [INFO]: Element "Result Message" is displayed: true
+2025-06-23 20:45:47 [INFO]: Element "Result Chart" is displayed: true
+2025-06-23 20:45:47 [INFO]: Element "Result Table" is displayed: true
+2025-06-23 20:45:47 [INFO]: Element "Email My Results Button" is clickable: true
+2025-06-23 20:45:47 [INFO]: Element "Edit Info Button" is clickable: true
+2025-06-23 20:45:47 [INFO]: Element "See Full Results Button" is clickable: true
+2025-06-23 20:45:56 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:45:57 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:45:58 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:45:58 [INFO]: Successfully fetched data "TC04_noCurrentAge" from retirementData JSON file.
+2025-06-23 20:45:58 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:46:03 [INFO]: Set value "BLANK" on element: Current Age
+2025-06-23 20:46:04 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:46:04 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:46:05 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:46:05 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:46:05 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:46:06 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:46:06 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:46:07 [INFO]: Clicked on element: Marital Status as Married
+2025-06-23 20:46:08 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:46:08 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:46:09 [INFO]: Clicked on Calculate Button
+2025-06-23 20:46:09 [INFO]: Successfully fetched data "TC04_noCurrentAge" from retirementData JSON file.
+2025-06-23 20:46:09 [INFO]: [Current Age] Error message validation passed.
+2025-06-23 20:46:18 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:46:18 [INFO]: 'Accept Cookies' button is not displayed.
+2025-06-23 20:46:19 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:46:19 [INFO]: Successfully fetched data "TC05_noRetirementAge" from retirementData JSON file.
+2025-06-23 20:46:19 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:46:19 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:46:20 [INFO]: Set value "BLANK" on element: Retirement Age
+2025-06-23 20:46:20 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:46:27 [ERROR]: Error performing action "setValue" on element "Spouse Annual Income": WebDriverError: invalid session id when running "element/f.206441824C0B11EFF068E1BC3D31B299.d.80C488FE1F7B374A8E7346855FC5DE5E.e.9/click" with method "POST"
+2025-06-23 20:46:27 [ERROR]: Error in fillPageData:
+2025-06-23 20:46:34 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:46:34 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:46:35 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:46:35 [INFO]: Successfully fetched data "TC06_noCurrentIncome" from retirementData JSON file.
+2025-06-23 20:46:35 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:46:41 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:46:41 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:46:42 [INFO]: Set value "BLANK" on element: Current Annual Income
+2025-06-23 20:46:42 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:46:43 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:46:43 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:46:43 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:46:43 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:46:45 [INFO]: Clicked on element: Marital Status as Married
+2025-06-23 20:46:45 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:46:46 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:46:46 [INFO]: Clicked on Calculate Button
+2025-06-23 20:46:46 [INFO]: Successfully fetched data "TC06_noCurrentIncome" from retirementData JSON file.
+2025-06-23 20:46:46 [INFO]: [Current Income] Error message validation passed.
+2025-06-23 20:46:55 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:46:55 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:46:56 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:46:56 [INFO]: Successfully fetched data "TC07_noCurrentTotalSavings" from retirementData JSON file.
+2025-06-23 20:46:56 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:47:05 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:47:06 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:47:06 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:47:07 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:47:07 [INFO]: Set value "BLANK" on element: Retirement Savings
+2025-06-23 20:47:08 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:47:08 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:47:08 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:47:09 [INFO]: Clicked on element: Marital Status as Married
+2025-06-23 20:47:09 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:47:10 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:47:10 [INFO]: Clicked on Calculate Button
+2025-06-23 20:47:10 [INFO]: Successfully fetched data "TC07_noCurrentTotalSavings" from retirementData JSON file.
+2025-06-23 20:47:10 [INFO]: [Current Total Savings] Error message validation passed.
+2025-06-23 20:47:18 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:47:19 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:47:20 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:47:20 [INFO]: Successfully fetched data "TC08_noCurrentAnnualSavings" from retirementData JSON file.
+2025-06-23 20:47:20 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:47:26 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:47:27 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:47:27 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:47:28 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:47:28 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:47:28 [INFO]: Set value "BLANK" on element: Retirement Contribution
+2025-06-23 20:47:29 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:47:29 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:47:31 [INFO]: Clicked on element: Marital Status as Married
+2025-06-23 20:47:31 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:47:31 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:47:32 [INFO]: Clicked on Calculate Button
+2025-06-23 20:47:32 [INFO]: Successfully fetched data "TC08_noCurrentAnnualSavings" from retirementData JSON file.
+2025-06-23 20:47:32 [INFO]: [Current Annual Savings] Error message validation passed.
+2025-06-23 20:47:40 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:47:41 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:47:41 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:47:41 [INFO]: Successfully fetched data "TC09_noSavingsIncreaseRate" from retirementData JSON file.
+2025-06-23 20:47:41 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:47:48 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:47:49 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:47:49 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:47:50 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:47:50 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:47:50 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:47:51 [INFO]: Set value "BLANK" on element: Increase Annual Rate Savings
+2025-06-23 20:47:52 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:47:52 [INFO]: Clicked on element: Marital Status as Married
+2025-06-23 20:47:53 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:47:53 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:47:53 [INFO]: Clicked on Calculate Button
+2025-06-23 20:47:54 [INFO]: Successfully fetched data "TC09_noSavingsIncreaseRate" from retirementData JSON file.
+2025-06-23 20:47:54 [INFO]: [Savings Increase Rate] Error message validation passed.
+2025-06-23 20:48:02 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:48:03 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:48:04 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:48:04 [INFO]: Successfully fetched data "TC10_currAgeGrtThanRetAge" from retirementData JSON file.
+2025-06-23 20:48:04 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:48:09 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:48:10 [INFO]: Set value "28" on element: Retirement Age
+2025-06-23 20:48:11 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:48:11 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:48:12 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:48:12 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:48:12 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:48:13 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:48:13 [INFO]: Clicked on element: Marital Status as Married
+2025-06-23 20:48:13 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:48:14 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:48:15 [INFO]: Clicked on Calculate Button
+2025-06-23 20:48:15 [INFO]: Successfully fetched data "TC10_currAgeGrtThanRetAge" from retirementData JSON file.
+2025-06-23 20:48:15 [INFO]: [Retirement Age] Error message validation passed.
+2025-06-23 20:48:25 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:48:25 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:48:26 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:48:26 [INFO]: Successfully fetched data "TC11_currentAgeMaxVal" from retirementData JSON file.
+2025-06-23 20:48:26 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:48:32 [INFO]: Set value "121" on element: Current Age
+2025-06-23 20:48:33 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:48:33 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:48:34 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:48:34 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:48:35 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:48:35 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:48:35 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:48:36 [INFO]: Clicked on element: Marital Status as Married
+2025-06-23 20:48:36 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:48:36 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:48:37 [INFO]: Clicked on Calculate Button
+2025-06-23 20:48:37 [INFO]: Successfully fetched data "TC11_currentAgeMaxVal" from retirementData JSON file.
+2025-06-23 20:48:37 [INFO]: [Current Age] Error message validation passed.
+2025-06-23 20:48:45 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:48:45 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:48:46 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:48:46 [INFO]: Successfully fetched data "TC12_retirementAgeMaxVal" from retirementData JSON file.
+2025-06-23 20:48:46 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:48:53 [INFO]: Set value "100" on element: Current Age
+2025-06-23 20:48:53 [INFO]: Set value "121" on element: Retirement Age
+2025-06-23 20:48:54 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:48:54 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:48:55 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:48:55 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:48:55 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:48:56 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:48:56 [INFO]: Clicked on element: Marital Status as Married
+2025-06-23 20:48:56 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:48:57 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:48:57 [INFO]: Clicked on Calculate Button
+2025-06-23 20:48:57 [INFO]: Successfully fetched data "TC12_retirementAgeMaxVal" from retirementData JSON file.
+2025-06-23 20:48:58 [INFO]: [Retirement Age] Error message validation passed.
+2025-06-23 20:49:06 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:49:06 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:49:07 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:49:07 [INFO]: Successfully fetched data "TC13_retirementAgeShouldNotBeLessThanCurrentAge" from retirementData JSON file.
+2025-06-23 20:49:07 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:49:15 [INFO]: Set value "25" on element: Current Age
+2025-06-23 20:49:15 [INFO]: Set value "24" on element: Retirement Age
+2025-06-23 20:49:15 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:49:16 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:49:16 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:49:16 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:49:17 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:49:17 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:49:18 [INFO]: Clicked on element: Marital Status as Married
+2025-06-23 20:49:19 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:49:19 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:49:19 [INFO]: Clicked on Calculate Button
+2025-06-23 20:49:20 [INFO]: Successfully fetched data "TC13_retirementAgeShouldNotBeLessThanCurrentAge" from retirementData JSON file.
+2025-06-23 20:49:20 [INFO]: [Retirement Age] Error message validation passed.
+2025-06-23 20:49:28 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:49:28 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:49:29 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:49:29 [INFO]: Successfully fetched data "TC14_withIncludeInflation" from retirementData JSON file.
+2025-06-23 20:49:29 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:49:36 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:49:36 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:49:37 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:49:37 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:49:38 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:49:38 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:49:38 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:49:39 [INFO]: Clicked on element: Select Social Security Benefits as No
+2025-06-23 20:49:39 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:49:39 [INFO]: Clicked on element: Adjust default values link
+2025-06-23 20:49:40 [INFO]: Successfully fetched data "TC14_withIncludeInflation" from retirementData JSON file.
+2025-06-23 20:49:40 [INFO]: Set value "500" on element: Additional Income
+2025-06-23 20:49:40 [INFO]: Set value "20" on element: Retirement Duration
+2025-06-23 20:49:41 [INFO]: Clicked on element: Include Inflation
+2025-06-23 20:49:42 [INFO]: Set value "null" on element: Expected Inflation Rate
+2025-06-23 20:49:43 [INFO]: Set value "null" on element: Retirement Annual Income
+2025-06-23 20:49:43 [INFO]: Set value "null" on element: Pre Retirement Return
+2025-06-23 20:49:43 [INFO]: Set value "null" on element: Post Retirement Return
+2025-06-23 20:49:44 [INFO]: Clicked on Calculate Button
+2025-06-23 20:49:45 [INFO]: Element "Result Page" is displayed: true
+2025-06-23 20:49:45 [INFO]: Element "Result Message" is displayed: true
+2025-06-23 20:49:45 [INFO]: Element "Result Chart" is displayed: true
+2025-06-23 20:49:45 [INFO]: Element "Result Table" is displayed: true
+2025-06-23 20:49:46 [INFO]: Element "Email My Results Button" is clickable: true
+2025-06-23 20:49:46 [INFO]: Element "Edit Info Button" is clickable: true
+2025-06-23 20:49:46 [INFO]: Element "See Full Results Button" is clickable: true
+2025-06-23 20:49:54 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:49:54 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:49:55 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:49:55 [INFO]: Successfully fetched data "TC15_withExcludeInflation" from retirementData JSON file.
+2025-06-23 20:49:55 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:50:03 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:50:03 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:50:03 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:50:04 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:50:04 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:50:05 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:50:05 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:50:05 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:50:06 [INFO]: Clicked on element: Marital Status as Married
+2025-06-23 20:50:06 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:50:06 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:50:07 [INFO]: Clicked on element: Adjust default values link
+2025-06-23 20:50:07 [INFO]: Successfully fetched data "TC15_withExcludeInflation" from retirementData JSON file.
+2025-06-23 20:50:07 [INFO]: Set value "500" on element: Additional Income
+2025-06-23 20:50:08 [INFO]: Set value "20" on element: Retirement Duration
+2025-06-23 20:50:08 [INFO]: Clicked on element: Include Inflation
+2025-06-23 20:50:09 [INFO]: Set value "null" on element: Expected Inflation Rate
+2025-06-23 20:50:09 [INFO]: Set value "null" on element: Retirement Annual Income
+2025-06-23 20:50:10 [INFO]: Set value "null" on element: Pre Retirement Return
+2025-06-23 20:50:11 [INFO]: Set value "null" on element: Post Retirement Return
+2025-06-23 20:50:12 [INFO]: Clicked on Calculate Button
+2025-06-23 20:50:13 [INFO]: Element "Result Page" is displayed: true
+2025-06-23 20:50:13 [INFO]: Element "Result Message" is displayed: true
+2025-06-23 20:50:13 [INFO]: Element "Result Chart" is displayed: true
+2025-06-23 20:50:13 [INFO]: Element "Result Table" is displayed: true
+2025-06-23 20:50:14 [INFO]: Element "Email My Results Button" is clickable: true
+2025-06-23 20:50:14 [INFO]: Element "Edit Info Button" is clickable: true
+2025-06-23 20:50:14 [INFO]: Element "See Full Results Button" is clickable: true
+2025-06-23 20:50:23 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:50:24 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:50:25 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:50:25 [INFO]: Successfully fetched data "TC16_verifywithSocialSecurityNo" from retirementData JSON file.
+2025-06-23 20:50:25 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:50:31 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:50:35 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:50:35 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:50:36 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:50:36 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:50:36 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:50:37 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:50:37 [INFO]: Clicked on element: Select Social Security Benefits as No
+2025-06-23 20:50:37 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:50:37 [INFO]: Successfully fetched data "TC16_verifywithSocialSecurityNo" from retirementData JSON file.
+2025-06-23 20:50:38 [INFO]: socialSecurityBenefits is selected as expected.
+2025-06-23 20:50:38 [INFO]: No Social Security Benefits
+2025-06-23 20:50:48 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:50:48 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:50:49 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:50:49 [INFO]: Successfully fetched data "TC17_verifyWithSocialSecurityYes" from retirementData JSON file.
+2025-06-23 20:50:49 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:50:56 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:50:58 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:50:58 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:50:58 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:50:59 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:50:59 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:50:59 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:51:00 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:51:00 [INFO]: Clicked on element: Marital Status as Single
+2025-06-23 20:51:01 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:51:01 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:51:01 [INFO]: Successfully fetched data "TC17_verifyWithSocialSecurityYes" from retirementData JSON file.
+2025-06-23 20:51:01 [INFO]: socialSecurityBenefits is selected as expected.
+2025-06-23 20:51:01 [INFO]: Social Security Benefits is added
+2025-06-23 20:51:01 [INFO]: Element "Marital Status Fields" is displayed: true
+2025-06-23 20:51:02 [INFO]: maritalStatus is selected as expected.
+2025-06-23 20:51:02 [INFO]: Marital Status: Single
+2025-06-23 20:51:02 [INFO]: "socialSecurityOverrideAmt" has expected value: "4000"
+2025-06-23 20:51:02 [INFO]: Social Security Override Amount:
+2025-06-23 20:51:11 [INFO]: Checking if the 'Accept Cookies' button is displayed...
+2025-06-23 20:51:11 [INFO]: 'Accept Cookies' button clicked successfully.
+2025-06-23 20:51:12 [INFO]: Retirement calculator page opened successfully.
+2025-06-23 20:51:12 [INFO]: Successfully fetched data "TC18_verifyWithMaritalStatusMarried" from retirementData JSON file.
+2025-06-23 20:51:12 [INFO]: Filling out the retirement calculator form...
+2025-06-23 20:51:19 [INFO]: Set value "40" on element: Current Age
+2025-06-23 20:51:21 [INFO]: Set value "68" on element: Retirement Age
+2025-06-23 20:51:21 [INFO]: Set value "100000" on element: Current Annual Income
+2025-06-23 20:51:21 [INFO]: Set value "75000" on element: Spouse Annual Income
+2025-06-23 20:51:22 [INFO]: Set value "500000" on element: Retirement Savings
+2025-06-23 20:51:22 [INFO]: Set value "10" on element: Retirement Contribution
+2025-06-23 20:51:22 [INFO]: Set value "0.25" on element: Increase Annual Rate Savings
+2025-06-23 20:51:23 [INFO]: Clicked on element: Social Security Benefits Selection as Yes
+2025-06-23 20:51:23 [INFO]: Clicked on element: Marital Status as Married
+2025-06-23 20:51:25 [INFO]: Set value "4000" on element: Social Security override amount
+2025-06-23 20:51:25 [INFO]: Retirement calculator form filled successfully.
+2025-06-23 20:51:25 [INFO]: Successfully fetched data "TC18_verifyWithMaritalStatusMarried" from retirementData JSON file.
+2025-06-23 20:51:25 [INFO]: socialSecurityBenefits is selected as expected.
+2025-06-23 20:51:25 [INFO]: Social Security Benefits is added
+2025-06-23 20:51:25 [INFO]: Element "Marital Status Fields" is displayed: true
+2025-06-23 20:51:25 [INFO]: maritalStatus is selected as expected.
+2025-06-23 20:51:25 [INFO]: Marital Status: Married
+2025-06-23 20:51:26 [INFO]: "socialSecurityOverrideAmt" has expected value: "4000"
+2025-06-23 20:51:26 [INFO]: Social Security Override Amount:
